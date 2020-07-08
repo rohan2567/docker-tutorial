@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Docker</title>
+
+<meta name=”viewport” content=”width=device-width,  initial-scale=1, user-scalable=yes″>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<style>
+
+
+@viewport
+  {
+    width:extend-to-zoom;
+    zoom:1.0;
+  }
+@-ms-viewport
+  {
+     width:extend-to-zoom;
+    zoom:1.0;
+  }
+  
+  
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    }
+    
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    
+    html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    
+    .clear {clear: both;}
+    
+    p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    #cv {
+        width: 90%;
+        max-width: 800px;
+        background: #f3f3f3;
+        margin: 30px auto;
+    }
+    
+    .mainDetails {
+        padding: 25px 35px;
+        border-bottom: 2px solid #cf8a05;
+        background: #ededed;
+    }
+    
+    #name h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        margin-bottom: -6px;
+    }
+    
+    #name h2 {
+        font-size: 2em;
+        margin-left: 2px;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    
+    #mainArea {
+        padding: 0 40px;
+    }
+    
+    #headshot {
+        width: 12.5%;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #headshot img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    #name {
+        float: left;
+    }
+    
+    #contactDetails {
+        float: right;
+    }
+    
+    #contactDetails ul {
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+    
+    #contactDetails ul li {
+        margin-bottom: 3px;
+        color: #444;
+    }
+    
+    #contactDetails ul li a, a[href^=tel] {
+        color: #444; 
+        text-decoration: none;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    
+    #contactDetails ul li a:hover { 
+        color: #cf8a05;
+    }
+    
+    
+    section {
+        border-top: 1px solid #dedede;
+        padding: 20px 0 0;
+    }
+    
+    section:first-child {
+        border-top: 0;
+    }
+    
+    section:last-child {
+        padding: 20px 0 10px;
+    }
+    
+    .sectionTitle {
+        float: left;
+        width: 25%;
+    }
+    
+    .sectionContent {
+        float: right;
+        width: 72.5%;
+    }
+    
+    .sectionTitle h1 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #cf8a05;
+    }
+    
+    .sectionContent h2 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: -2px;
+    }
+    
+    .subDetails {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+    
+    .keySkills {
+        list-style-type: none;
+        -moz-column-count:3;
+        -webkit-column-count:3;
+        column-count:3;
+        margin-bottom: 20px;
+        font-size: 1em;
+        color: #444;
+    }
+    
+    .keySkills ul li {
+        margin-bottom: 3px;
+    }
+    
+    @media all and (min-width: 602px) and (max-width: 800px) {
+        #headshot {
+            display: none;
+        }
+        
+        .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 601px) {
+        #cv {
+            width: 95%;
+            margin: 10px auto;
+            min-width: 280px;
+        }
+        
+        #headshot {
+            display: none;
+        }
+        
+        #name, #contactDetails {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .sectionTitle, .sectionContent {
+            float: none;
+            width: 100%;
+        }
+        
+        .sectionTitle {
+            margin-left: -2px;
+            font-size: 1.25em;
+        }
+        
+        .keySkills {
+            -moz-column-count:2;
+            -webkit-column-count:2;
+            column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 480px) {
+        .mainDetails {
+            padding: 15px 15px;
+        }
+        
+        section {
+            padding: 15px 0 0;
+        }
+        
+        #mainArea {
+            padding: 0 25px;
+        }
+    
+        
+        .keySkills {
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+        }
+        
+        #name h1 {
+            line-height: .8em;
+            margin-bottom: 4px;
+        }
+    }
+    
+    @media print {
+        #cv {
+            width: 100%;
+        }
+    }
+    
+    @-webkit-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .instaFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+    
+    .quickFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 2.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+    }
+     
+    .delayOne {
+        -webkit-animation-delay: 0, .5s;
+        -moz-animation-delay: 0, .5s;
+        animation-delay: 0, .5s;
+    }
+    
+    .delayTwo {
+        -webkit-animation-delay: 0, 1s;
+        -moz-animation-delay: 0, 1s;
+        animation-delay: 0, 1s;
+    }
+    
+    .delayThree {
+        -webkit-animation-delay: 0, 1.5s;
+        -moz-animation-delay: 0, 1.5s;
+        animation-delay: 0, 1.5s;
+    }
+    
+    .delayFour {
+        -webkit-animation-delay: 0, 2s;
+        -moz-animation-delay: 0, 2s;
+        animation-delay: 0, 2s;
+    }
+    
+    .delayFive {
+        -webkit-animation-delay: 0, 2.5s;
+        -moz-animation-delay: 0, 2.5s;
+        animation-delay: 0, 2.5s;
+	}
+	
+
+
+    .headings
+    {
+        font-size: xx-large;
+    }
+    .mini-headings
+    {
+        font-size: x-large;
+        font-style: oblique;
+        color:darkgoldenrod
+    }
+
+
+
+	
+</style>
+
+
+
+
+
+<body id="top">
+
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABUFBMVEX///8DnMYBi7kluOsAnMsCncO+29///v8jue/+//3///sAqt38//8nrNinsbMjufGWo6UvPkbP0NQ9RE4Bi7ojgZw9PT8AjcAjOzwNnbwgg5oAq9mqra8tepImo8MyY3MVlK4taH4ql7Ypnbbe4uIme5EsiaYjrdA6TVTU7fIvPUa1ub0uRUwxV2EtcIkdj60tfpIxbn4yY245V2cntd1KW2Kzy9A2TU06REQ0e5gjPkQdiZwwXW49SU8YlLs7TVYDMjMQLTUzbowxcn4shqkoorIuPj46XXYis9FDS1g3Z30yQVCIkpUVM0Fxen4wVVs9PkYIqMRUZHBEV10jfIM9QTuenqk5PU9DOj8rQTt0goUhwekArOYub3Lb2+C2srrO2dNWaWs0gamzu7d7jI5rwd9Oqse55vSkt75/ytve9fmi3PGBlI/G39ycsL5udXsqnE/rAAAM7klEQVR4nO2b+1vaShqAAyFyDRCuAiYB5JJCLoZLE5Ake5RDq6Ciru2pWrf0Zk/P7vr//7YzCSAgXs4+FWifeVuBJATy8s18800CGIZAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCARiqXimF91O33KO4/nIhabIYb+cYfkf6831Mb9tYO5lH9GPpsxXd2RRlnfhP4Hy/4KGHbpWIy9wHCdrtTYw/OUor9PZdIvZ2vq9lW0XOr+iYYfObrJEg2YqTLrwq8Zwky1uRRmWKRRKv7BhAxn+tFiGzBYNDZM/cT/0eDzuIRMP3W7TMFsp0lGmxUg/8WjhBEA1CGb6jhbM0aJCbjU2X21uF5o/raFZbfosbh/BBWBYrOk1IvE6XSxu/7wxxHJhheP2OMPgOA48MsADw1riWL2dlkyy+w8bglbgBGWdeyULu1zX4BQIp2h7CmeqKeaNofGqqobVvqZq4QdzKVTrHRyu6OQj1z1iiGOSKRIESST7TA3yGt4Y8jHBEI5jB8Ec5x809LgxfzOsnuRWsjrP8VWikc+y6ehOIiPFyAyxFS2+J7ZF3BAlKaM3tvQdKfqIIfad77aFbj23sMP+G+R4gZDltCBF2QSbjpEVZqtRZDcLco0Tk2k2IebTLSmZf7AferAeJbpcLY3LgQFn1RrrfMPs3zJ0O0tdG5hmseqJD1u5dDPfMGEZSk8zxEIlNoC7cFe12VtRQ3G+YUFqpZ9kGCwlXThwJJVSaOWyTU6pMrtiVkjPM9wGhnT2ccMbHjZSF44n+yer1g2BocDIYmIyhvSoHz7V0HfKkZYhLjTLCzv0JwJjOGM4zjSFNGylTzDkOC8OcQX00s3yg+j2OCeWYD/M59NgPMzoGemsKDN0tAbmSzs1bkeS5M1/NtL76WSjO2XonH5FJ8fhQ1xG9wqz6ltQ01vF7sLxYKHgLT1OAEVLiiCKx8XjwplZ0+A1/AIHhkWimDpmjpliMR87fPNmtMsb/8z58AlDXC5NNlNrxrJgfB4s2FQ6VImClFSN6/fV/ts/YrE/+uG9cKwf++PsLVhQOa1/Fov1VbAmpnFK/521B0V1T2di6FOGrRTQLvV85WDv/Py85w+BEC4hs0LDkpyMDtmuGlK6IEltMIVIi1p+O9qG28Afx5rzikIabGK5rWi0be2RN+qzL3mqkSNDh8oNP4hSqcSfl51zD+JZAW8Z7BR0JprQpWJh01apXtg2calW3MQ3j2NEm5AkJknoyZTRqJF6zZGtSSSZ1GxSVk8S6TQhMeFZQ+xG1XE4IOL4BXmmcZXddlvXk/kW12+ehJyLvuIBDfltOlFtR1lCSKZ3qzVaZKq27QrJEmcEyJ5yoiLlMwTXyGYrDL3FgCq1oBCZZIGVMrT0irhrGKTowKWVaWwZKeW9TKXAjdfriAr8u95i/SzDt4W8LmxHK4lKNMsKtTx9LDBSpvieOSNYXd5NtKStjE2hs5sVYotmXhFSVE28LyQzktyQ5ES4Ptu5rg6OzAjiIEelvN6UiXnvMN6FlmFIFXazgtSWEywwBDGki8BwvyjbYolKVhSBYVJmTEPzjPBmOqoRsmlISzKI4Z3OdaplQdHmCrhcppfXBDqKyuGiBS3DNg3HeJmoJKHhlmkoF2UiRgi6aRhlGaUxPl8qRTVGLmzfZ+jE/FSrdukKBFzeCUBDLWjNxc8ZHzPMzjckHjD0Yb461YBB9E5j19b/tXDBxwxb9xgycnLb6ofzDLEQ/66Au7ypKcGkVlp4moG44WiRzx4loSHsh69pERgWYD/sJwRdBqvT+QzD0dnf95nGFlMh0lGOkNuF/bRM6+8JtT5K//Bsq6noV7S3bdw7SjJmorG1wlRw9usAC8EHRnxgKGzn2URrOy0L5mixKe0WWZBpjszRIk3vEwadTbMMTYNMI0XhaLH9ChimKyCXTg1wvg89vqntkwFv6nKcYVKSrHVPX975wsOz4nS73bAiBjVNJ5ko6kUiW9SPU6xwQZIX5EWNxF8T/UQClKipbIohily+dkHiZA0n8VqUIwkbo5OgfNUZre4xX8vpzuVCG4ennY6aYXAgmLrM6gApKrJ7KsX1nIs9hXq1Vx9hKNV9NlOpVFiW3TeM/YzMymwlsy+31AoL1rZYeMsJ8nuwYZeV9zNHSmYfPLmSgVsVY/RCHN/pdLrVNokHXDgMoBDu8uE+Ra1TA38OTmMWaRhqanyYp8IALTxk/GAWuEG7d6u5XeM5zqi2GtniBRwIcRBCrx5Wbk4Ghz3/h2XMmsqlDEPYbCnyB4LjgUAAr7nA7B7mllSmExy93RIqbn8nH0ilavCYQOlhEhjiGq9xjbe4Jp43u20CUImaETSzp0MpgabpG16oW5CXz/o0wd9GiYZ5bjwZt86rTCxCAmbtFZhZCx+AOLmm1423BWCSqYE/mroZva1vYR0QjFcjQypvjlcjk/mYKnM2QvP79gDj4CVMM6TR/DB+X5C6F2XY840Mt8aGrvsMXQG8TQbmuZD6/D0CII2CAbAIhoqGenhr5ewtqifm3g2s2tc/GUMxO23hGt9FY4JtYs1ovc0IR2+f5pp8hqstFi/BMG8zKDhRsiRzdSOHPW++MS/Mg+n1Ic93eznwtp/eyVDQG8DJj4ZmNLxmY4R54/a4HW1BPVK0HRKHE6HAMOeAAMphjtOEgtc1bKvWXhdwJ5sc1oSoLXUpqufD9/aFPvMc/9n3vIbWWa5QnecMo0ud9Mr+9UwqZdM/Nqp7KgeOl5MLMN3DY4aNlnS0xWpYg1d/NUVrFRgcjuJwq63d0jR45dRQVUFsOyx9Ux63FVgjbCjg1Vp5ji/nnKDKKfdOeDBWctTgeee+Th+oF42DEs/z8LRQ86DJ7YX7KgAeraKoWliLqcoRrFQqggE3qOBIFUUDIz2nxtS+IYD6pQp2ioHBH7IH5GOqGtOMKgsROLXfN7dxQFNT+Gap2Wz+Bm95+Lalg9Ng6Pmi6AxtBDcmCRqaaELTdKNB0+ZdAy6J9BCRBuvhpjz4P3xOPm8tD8mP15k7DNmRRVDLbcwhuPGMjrOcaG17HOD4YcRH6HG7sL78CxaHVN4OsRE/Bt0+QtftLfVm+ZfV/FTFHgE4bA7bDwAKRizseiPcvVpGKTpNjuesT5x44LgJx0Nbb59ms0eG8QP38bba/YQ5l27oq2tt87DuO2wYXOJp8b1tofFIJG6vlj5jK2CIBalM3FScHyaH7cuXpzVgR2QsaI/o8UhmzhnUZeC+oqpx0LhAt5l31I6v18FP109RtI9aqHUfF8Pd3PI7IQYnUgNeNA8qcveoCYfjut789v3a8ZjibQM19ex2kVudryeEmtzwc58TQ+IlKLX4F/PiOxXASGRSMG4XtVIZW42fDLk92CC8o1ut646gg7g+5fnB9QOGhM1hv22hlqFOG90NbEUMASHKAPkdjmN22BhB6iSGfmDx61qvt/b1gdHCMdU+YRa1Rxpa6c2yraY4pFjdCoMOY2IaArtEVszYHMyffwLV+wz16ejBLAr6oHYQfPxdF0mOUxvALh4fRhE4SlG6ZVBnqgRVR0G9Ez7dfkcQ/GXU1ft2dJkyqoLwqgVhBQHOHSmqc3pe0GGTJe4xNMuzO35g3tgtr0oWHeHGeiXjlOMtOO50cPM5+G3txfe/HLb7m+c8IvZolTdCS7ny8iBO36B5vvZyxNqLF9+/v4B8nTvWO/TZ7Hk7ShjNQW4VSrVpfE54MfP8xdotLyyu71SkDofdGvzuGkYi7Za63luxBjomVy8N1qaAht+/wCxKTMYO+s2mF7gG3IjhTj0Er2atyjg4iRsoUoOXa7Nc63Ck1Of3umlowej+e+U64CS5QdP476zhf/6S4qMs+QBx+8eqUhp8WLbDw7h9nw9K53cVI/ZHIgha6MeqVlL8K/h17mk82Df+bhiBYiQ+z8vsepE4KGJ2hLOuEVzFzjcD6EO5G6o5+DarqNvj81op7J26vZ0xtFIdxG/1BsE7wMvrznK9Oev4n7Xs3G4IYvsxI7yjujef3Niq/r5pGvhFA8zp5w74088vpxS/mLlmPIkHFaxdb4utI41aPw3mwE5Oz2qOEfPxlU86FHX6+duE5V9f7aYWPNMbsbcbO6/2lHBzvR68WvbR/h/AizdXwQFfaja5AahPYRkHwvhXtg3YETOtqsFT/LpSPy+v5C+aHgd+o8mDOa/853W+CeEVzdgzFMOwrueAfHty0yvnzMTiXrUK9O/hy4U2eucndaPLd7uGYdQHh+dBfzmX+7m1ZnG7PT6fc/hDAmyhX/ZZAM47JzyX9FuJZ8NpAR9aMXT+FKMeAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAe538RtEOC0M2ojQAAAABJRU5ErkJggg==" alt="Alan Smith"/>
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Docker</h1>
+			<!-- <h2 class="quickFade delayThree">DevOps</h2> -->
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>
+                    Docker History
+                </li>
+                <li>Docker Architecture</li>
+                <li>Installing Docker on Ubuntu</li>
+                <li>Containers and Images - Concepts</li>
+                <li>Docker Basic Commands</li>
+                <li>Dockerfile</li>
+                <li>Docker Networking</li>
+                <li>Docker Volumes</li>
+                <li>Docker Compose</li>
+                <li>Docker Swarm</li>
+                <li>Docker and AWS ECS</li>
+            
+				
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+
+
+
+
+
+	    <div id="mainArea" class="quickFade delayFive">
+		    
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Docker History
+                    </h1>
+                </center> <br>
+            <div class="mini-headings">So , what happened before docker ?</div>
+            A developer sends code to a tester but it doesn’t run on the tester’s system due to
+            various dependency issues, however it works fine on the developer’s end.
+            <br>
+            <div class="mini-headings">
+                But what docker has provided with ?
+            </div>
+            As the tester and developer now have the same system running on Docker
+            container, they both are able to run the application in the Docker environment
+            without having to face differences in dependencies issue as before.
+           <br>
+           So, <br>
+           &emsp;Docker is a software development tool and a virtualization technology that makes it easy
+           <br>
+           &emsp;to develop, deploy, and manage applications by using containers.
+           <br><br>
+           &emsp;
+           Container refers to a lightweight, stand-alone, executable package of a piece of software
+           that <br>
+           &emsp;contains all the libraries, configuration files, dependencies, and other necessary parts
+           to operate the <br>
+           &emsp;application. They are the running instances of docker images.<br>
+           &emsp;Example : Ubuntu + Python + Dependencies
+           <br><br>
+           <center>
+               <img src="assets/Docker/1.png">
+           </center>
+<br>
+           <div class="mini-headings">
+            So, what is difference between VM's and Containers ?
+            </div>
+            <br>
+            <center>
+                <img src="assets/Docker/2.png">
+            </center>
+            </p> <hr>
+        
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Docker Architecture
+                    </h1>
+                </center> <br>
+                         
+                <center>
+                    <img src="assets/Docker/3.png">
+                </center>
+                <br>
+                <li>The server is the physical server that is used to host multiple virtual machines. So this layer remains the same.
+                </li>
+                <li>The Host OS is the base machine such as Linux or Windows. So this layer remains 
+                    the same.
+                </li>
+                <li>Now comes the new generation which is the Docker engine. This is used to run the operating system which earlier used to be virtual machines as Docker containers.
+                </li>
+                <li>All of the Apps now run as Docker containers.</li>
+                <br>
+                &emsp;The clear advantage in this architecture is that you don’t need to have extra hardware for Guest OS.
+                <br>&emsp;Everything works as Docker containers.
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1>
+                        Installing Docker On Ubuntu
+                    </h1>
+                </center> <br>
+            &emsp;Follow the below steps to install and configure docker if You use Ubuntu.
+            <br><br>
+            <center>
+                <img src="assets/Docker/4.png">
+            </center>
+            <br>
+            &emsp;Now, Run the below command to verify.
+            <br>
+            <br>
+            <center>
+                <img src="assets/Docker/5.png">
+            </center>
+                               
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Containers and Images - Concepts
+                    </h1>
+                </center> <br>
+            <div class="mini-headings">
+                Docker Images
+            </div>           
+            Docker image can be compared to a template that is used to
+            create Docker containers. These are <br>read-only templates that contains application
+            binaries and dependencies. Docker images are stored in the Docker Registry. 
+            
+            <div class="mini-headings">
+                Docker Containers
+            </div> 
+            Docker container is a running instance of a Docker image as
+            they hold the entire package needed to run the application.
+            <br>
+            <br>
+            <center>
+                <img src="assets/Docker/6.png">
+            </center>
+            <br>
+            We can run any number of containers based out of an image and Docker makes
+            sure that each container created has a unique name in the namespace.
+            Docker image is a read-only template. Changes made in containers won’t be
+            saved to the image by default
+            <br><br>
+            <center>
+                <img src="assets/Docker/7.png">
+            </center><br>
+            Containers run each service with its own dependencies in separate containers
+            <br><br>
+            <center>
+                <img src="assets/Docker/8.png">
+            </center><br><br>
+            <div class="mini-headings">
+                Docker Registry
+            </div>
+            Docker registry is a storage and distribution system for Docker images.
+            It is organized into Docker repositories , where a repository holds all the versions
+            of a specific image.
+            By default, the Docker engine interacts with DockerHub , Docker's public
+            registry instance.
+            However, it is possible to run on-premise private repositories
+            <br><br>
+            <p>https://hub.docker.com/</p>
+            <br>
+            <center>
+                <img src="assets/Docker/9.png" height="400px" width="700px">
+            </center><br><br>
+
+            
+
+
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Docker Basic Commands
+                    </h1>
+                </center> <br>
+            <br>
+            <center>
+                <img src="assets/Docker/10.png" height="400px" width="700px">
+            </center><br><br>
+   
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Dockerfile
+                    </h1>
+                </center> 
+                <p class="mini-headings">What is a Dockerfile ?</p>
+                • Dockerfile is essentially the build instructions to build your image<br>
+                • It is a text document that contains all the commands a user could call on the
+                command line to assemble the image<br>
+                • Using <i>docker build</i> users can create an automated build that executes several
+                command-line instructions in succession
+                <br><br>
+                <center>
+                    <img src="assets/Docker/11.png">
+                </center><br><br>
+                • Name of file is Dockerfile without any extensions.
+                <br><br>
+                <p class="mini-headings">Dockerfile contents</p>
+                <center>
+                    <img src="assets/Docker/12.png" width=700px>
+                </center><br><br>
+                <p class="mini-headings">
+                    Demo on Dockerfile
+                </p>
+                Here, we will deploy our python application using Dockerfile.
+                <br><br>
+                This is my directory structure that has a Dockerfile and an "app.py" that contains my application.
+                <br><br>
+                <center>
+                    <img src="assets/Docker/13.png">
+                </center><br><br>
+                Following are the steps used to build an application with Dockerfile.
+                <br><br>
+                <center>
+                    <img src="assets/Docker/14.png" width="700px">
+                </center><br><br>
+                Open your web browser and see the application deployed.
+                <br><br>
+                <center>
+                    <img src="assets/Docker/15.png">
+                </center>
+
+
+            </p> <hr>
+
+            
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Docker Networking
+                    </h1>
+                </center> <br>
+                Docker gives 3 default networks: bridge, none and host<br>
+                &emsp;When you start Docker, a default bridge network (also called bridge) is
+                created automatically, <br>&emsp;and newly-started containers connect to it unless
+                otherwise specified.     
+                <br><br>
+                <center>
+                    <img src="assets/Docker/16.png">
+                </center><br><br>
+                We can see details of a particular network using command :<br>
+                &emsp;&emsp;docker network inspect (name_of_Network)
+                <br>
+                <p class="mini-headings">
+                    Docker Networking : Bridge
+                </p>
+                In Bridge network, all containers get private internal IPs
+                and they are isolated from host.<br><br>
+                <center>
+                    <img src="assets/Docker/17.png">
+                </center><br>
+                <p style="color:darkblue;">Understanding DNS Resolution in Bridge Network</p>
+                &emsp;• &nbsp;When containers are run in default bridge network they cannot find
+                each other using their <br>&emsp;&emsp;container names.<br>&emsp;
+                • Simply put, DNS resolution through container names will not work
+                under default bridge network
+                <br><br>
+                In the below example, 2 containers are created under the default bridge network
+    Note that ping to second container from the first container using the second container’s name didn’t resolve(DNS server is not
+    available under default bridge network)
+    <br>
+    Run the following :
+    <div style="color: darkred;">docker run -itd --name c1 ubuntu</div>
+    <div style="color: darkred;">docker run -itd --name c2 ubuntu</div>
+    <div style="color: darkred;">docker attach c1</div>
+
+                <br>To Install ping in Ubuntu:<div style="color: darkred;">apt-get install iputils-ping</div>
+                <br>
+    <center>
+        <img src="assets/Docker/N1.png">
+    </center><br>
+    Now a new bridge network is created and containers are attached to
+    that network using --net flag
+    In this case, containers find each other using their container
+    names(DNS resolution through container names)
+    <br><br>
+    <center>
+        <img src="assets/Docker/N22.png">
+    </center><br>
+    Now when we try ping, it transfers packets.
+    <br><br>
+    <center>
+        <img src="assets/Docker/N3.png">
+    </center><br>
+    <center>
+        <img src="assets/Docker/n4.png">
+    </center><br>
+
+    
+<p class="mini-headings">
+    Docker Networking: Host
+</p>
+• In host network, all containers directly get connected to
+host.<br>
+• Multiple containers cannot run on same hosts because of
+port conflicts on host side<br><br>
+<center>
+    <img src="assets/Docker/20.png">
+</center><br>
+<center>
+    <img src="assets/Docker/21.png" width="700px">
+</center><br><br>
+
+<p class="mini-headings">
+    Docker Networking: None
+</p>
+• This offers a container-specific network stack that lacks a
+network interface.<br>
+• Containers run in pure isolation<br>
+• This container only has a local loopback interface (i.e., no
+external network interface)<br><br>
+<center>
+    <img src="assets/Docker/22.png" width="700px">
+</center><br>
+
+<p class="mini-headings">
+    Docker Networking: Overlay
+</p>
+Bridge networks apply to containers running on the same Docker daemon
+host. For communication among containers running on different Docker
+daemon hosts, we should use an overlay network which spans across the
+entire cluster
+<br><br>
+<center>
+    <img src="assets/Docker/23.png" width="700px">
+</center><br>
+
+
+
+
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Docker Volumes
+                    </h1>
+                </center> <br>
+                Data Volume is a directory or file in the container, mounted to a directory on your host. 
+                The data volume has its own address space on the Docker host’s local storage area. <br><br>  
+                <center>
+                    <img src="assets/Docker/24.png">
+                </center><br><br>
+                In this diagram, a data volume is located at the directory /data on the Docker host is mounted into two containers.
+                Data volumes can be shared and reused among containers, as you can mount several data volumes into a container.
+                <br>
+                Advantages:<br>
+1. To keep data around when a container is removed<br>
+2. To share data between the host filesystem
+and the Docker container<br><br>
+<p class="mini-headings">
+    Working with Docker Volumes
+</p>
+<div style="color:darkblue;">Create and list Volumes</div><br>
+<center>
+    <img src="assets/Docker/34.png">
+</center>
+&emsp;Mountpoint refers where the data volume is available.
+<br><br>
+<div style="color: darkblue;">How to Use This Volume ?</div>
+Start a jenkins container on port 8080 and attach the colume created to the container.
+<br><br>Run the following command :<br>
+<div style="color: darkred;">docker run --name MyJenkins -v myvolume1:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins</div>
+<br><br>
+<center>
+    <img src="assets/Docker/35.png" width=720px>
+</center>
+<br>
+Copy the key and perform required steps to start using jenkins.<br>Create a test job in jenkins dashboard.
+<br><br>
+<center>
+    <img src="assets/Docker/36.png" width=720px>
+</center>
+<br><br>
+Now, start another jenkins container on port 9090 by attaching your volume to it.<br>
+<div style="color: darkred;">docker run --name MyJenkins2 -v myvolume1:/var/jenkins_home -p 9090:8080 -p 60000:50000 jenkins</div>
+<br><br>Now afer running the command, it justs asks to login with your id and password.
+<br><br><center>
+    <img src="assets/Docker/37.png">
+</center><br><br>
+And after login data is shared between 2 jenkins containers running on different ports.
+<br><br><center>
+    <img src="assets/Docker/38.png" width=720px>
+</center><br><br>
+<div class="mini-headings">
+    Using Bind Mounts
+</div>Bind mounts : It is a file or directory on the host machine mounted into a container which means we can use a 
+physical location on our machine rather than using volumes.
+<br><br>Run the command <br>
+<div style="color: darkred;">docker run --name MyJenkins3 -v /home/rohan/Desktop/Jenkins_Home:/var/jenkins_home -p 9191:8080 -p 40000:50000 jenkins</div>
+<br>Some data will be fetched in your directory "/home/rohan/Desktop/Jenkins_Home"
+<br><br><center>
+    <img src="assets/Docker/39.png">
+</center><br>
+Now run the following commands to stop and remove all containers.
+<br>
+<div style="color: darkred;">docker stop $(docker ps -aq)</div>
+<div style="color: darkred;">docker rm $(docker ps -aq)</div>
+<br>
+Run the command <br> <div style="color: darkred;">docker volume ls</div>
+<br>You will still find your volume and can use this to create different containers and share data with other container with same set of jenkins jobs and plugins.
+<br><br><center>
+    <img src="assets/Docker/40.png">
+</center><br><br>
+
+<div style="color:darkblue">Remove volume </div>
+<div style="color: darkred;">docker volume rm myvolume1</div>
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Docker Compose
+                    </h1>
+                </center> <br>
+            <div class="mini-headings">What is Docker Compose ?</div>
+            Docker Compose is used to run multiple containers as a single service.
+             For example, an application requires both web server and a database containers, you could
+            create one file which would start both the containers as a service(docker compose) or
+            start each one separately(docker run)
+            <br><br>All services are to be defined in YAML format<br><br>Example : <br><br>
+            <center>
+                <img src="assets/Docker/42.png">
+            </center><br><br>
+            
+            <div style="color:darkblue">Step 1</div>
+            Make sure docker-compose is installed .
+            To verify, run either of commands:<br>
+            <div style="color: darkred;">docker-compose -v</div>
+            <div style="color: darkred;">docker-compose version</div>
+            <div style="color: darkred;">docker-compose --versionv</div>
+            <br>
+            <div style="color:darkblue">Step 2</div>
+            Creating a docker compose file at any location in your system with name "docker-compose.yml" and checking validity of file by command <div style="color: darkred;">docker-compose config</div>
+            <br><br>
+            <center>
+                <img src="assets/Docker/43.png">
+            </center><br><br>
+            <div style="color:darkblue">Step 3</div>
+            Run the file to create containers: 
+            <div style="color: darkred;">docker-compose up -d</div>
+            <br><center>
+                <img src="assets/Docker/44.png">
+            </center><br><br>
+            <div style="color:darkblue">Step 4</div>
+            Expose servers on required ports.<br><br>
+            <center>
+                <img src="assets/Docker/45.png">
+            </center><br>
+            <center>
+                <img src="assets/Docker/46.png" width=720px>
+            </center><br><br>
+            <div style="color:darkblue">Step 5</div>
+            To Scale services if required using "--scale" flag.
+            <br><br><center>
+                <img src="assets/Docker/47.png" width=720px>
+            </center><br>
+            
+
+
+
+
+        </p> <hr>
+
+        <p>
+            <center>
+                <h1 class="headings">
+                    Docker swarm
+                </h1>
+            </center> <br>
+        <p class="mini-headings">What is Container Orchestration ?</p>
+        Container orchestration is all about managing the lifecycles of containers, especially in large, dynamic
+        environments.<br>
+        ✓ Provisioning and deployment of containers<br>
+        ✓ Scaling up or removing containers to spread application load evenly across host infrastructure
+        <br>✓ Movement of containers from one host to another if there is a shortage of resources in a host, or if a
+        host dies<br>
+        ✓ Load balancing of service discovery between containers
+            <br>
+            <div class="mini-headings">
+                What is Docker Swarm ?
+            </div>
+            <br>
+            Swarm is Docker’s built in container orchestrator solution, its main purpose is to manage
+containers in a cluster, i.e. a set of connected machines that work together.<br>
+✓ When a new machine joins the cluster, it becomes a node in that swarm.<br>
+✓ Using Docker Swarm we can achieve high availability, load balancing and Decentralized access of
+our applications.<br>
+✓ Swarm comes built into the Docker Engine, you don’t need to install anything to get started.<br>
+<div style="color:darkblue;">What can you do using Docker Swarm</div>
+✓ Deploying new containers to replace failed ones<br>
+✓ Scale the number of containers for load balancing<br>
+✓ Rolling out application updates among the containers in rolling
+update fashion<br>
+✓ Rollback of applications to older versions<br>
+✓ Bring down a node for maintenance without any application
+downtime<br>
+<div class="mini-headings">Docker Swarm Architecture</div>
+<br><center>
+    <img src="assets/Docker/54.png" width="720px">
+</center><br>
+<div class="mini-headings">Docker Swarm Components</div>
+<br>
+<div style="color: darkblue;">Service</div>
+Defines tasks to be executed in master and worker nodes.
+<div style="color: darkblue;">Task</div>
+Refers to the docker container that execute the command defined in the service
+<br><br><center>
+    <img src="assets/Docker/55.png">
+</center><br>
+<div style="color: darkblue;">Manager Node</div>
+Responsible for :<br>
+✓ accepting commands and creating service objects<br>
+✓ allocating ip addr to tasks<br>
+✓ assining tasks to node<br>
+✓ instructing worker to run a task.
+<br>
+<div style="color: darkblue;">Worker Node</div>
+Responsible for checking assining tasks and executing cotainers.
+
+
+<div class="mini-headings">Docker Swarm Commands</div>
+<br>
+<div style="color: darkblue;">List services</div> 
+docker service ls
+
+<div style="color: darkblue;">List task of services</div>
+docker service ps <name>
+
+    <div style="color: darkblue;">create new service</div>
+docker service create <name> <image_name>
+
+    <div style="color: darkblue;">inspect service</div>
+docker service inspect --pretty <id>
+
+    <div style="color: darkblue;">remove service</div>
+docker service rm <name>
+
+    <div style="color: darkblue;">scale service</div>
+docker service scale <name>=5
+
+    <div style="color: darkblue;">leave swarm</div>
+docker service leave --force
+
+<div style="color: darkblue;">list the nodes</div>
+docker node ls
+
+<div style="color: darkblue;">list service in nodes</div>
+docker node ps
+
+<div style="color: darkblue;">remove node</div>
+docker rm <id>
+
+
+<div class="mini-headings">Docker Swarm Cluster Set up</div>
+<br>
+
+✓ Create AWS Linux machines<br><br>
+<center>
+    <img src="assets/Docker/48.png" width="720px">
+</center><br><br>
+✓ Add the following security groups
+<center>
+    <img src="assets/Docker/49.png">
+</center><br><br>
+
+✓ Now to perform orchestration we need to go back to Master node<br><br>
+<center>
+    <img src="assets/Docker/50.png" width="720px">
+</center><br>
+
+✓ Once swarm is intializedit provides you a token to join workers. Copy that particular Join command and run on worker1 and worker 2
+<br><br><center>
+    <img src="assets/Docker/51.png">
+</center>
+<center>
+    <img src="assets/Docker/52.png">
+</center><br>
+
+✓ Once the workers are joined to the master,go back to Master nodeand verify the cluster set up 
+<br><br><center>
+    <img src="assets/Docker/53.png" width="720px">
+</center>
+
+<div class="mini-headings">Docker Stack</div>
+Docker stack is a command that is embedded into docker cli.
+manages clusters of docker containers through docker swarm
+It makes it easy to depploy app services. by eliminating need to maintain scripts that define services.
+<br><br>
+<div style="color: darkblue;"> Need for Docker Stack :</div>
+✓ allows containers distributed across swarm to be deployed and groupthem logically.<br>
+✓ It manages the orchestration of multiple containers.<br>
+✓ Pooled resource mechanism.<br>
+
+<div class="mini-headings">Deploy Appication Using Docker Stack and compose</div>
+✓ Start a registry as a service in swarm mode.<br>
+<br><center>
+    <img src="assets/Docker/demo1.png" width=720px>
+</center><br>
+
+✓ Make sure docker compose is installed check by docker-compose -v.
+To Install docker-compose follow steps :<br>
+&emsp;sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname <br>&emsp;-s)-$(uname -m) -o /usr/local/bin/docker-compose
+<br>&emsp;sudo chmod +x /usr/local/bin/docker-compose
+
+
+<br><br>
+✓ I will create a python based app based on pip counter which maintains a counter in a redis instance whenever we visit it.
+ <br><br><center>
+    <img src="assets/Docker/demo2.png">
+</center>
+<br><br>
+
+✓ Check whether app is running.
+<div style="color: darkred;">docke-compose up -d</div>
+<br><center>
+    <img src="assets/Docker/demo3.png" width=720px>
+</center>
+
+<br>
+✓ Test the app
+<br><br><center>
+    <img src="assets/Docker/demo4.png">
+</center>
+<br>
+✓ To distribute the web app’s image across the swarm, it needs to be pushed to the registry you set up earlier.
+<br><br><center>
+    <img src="assets/Docker/demo5.png" width=720px>
+</center>
+<br>
+✓ Scale service to acheive high availabilty
+<br><br><center>
+    <img src="assets/Docker/demo6.png" width=720px>
+</center>
+<br><br>
+✓Now confirming on worker nodes 
+<br><br><center>
+    <img src="assets/Docker/demo7.png" width=720px>
+</center>
+<center>
+    <img src="assets/Docker/demo8.png" width=720px>
+</center>
+
+
+
+
+
+
+
+
+        </p> <hr>
+
+
+
+
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Orchestration using Docker and AWS ECS
+                    </h1>
+                </center> <br>
+            <p class="mini-headings">What is ECR?</p>  
+            It is a fully managed contaoner registry which makes it easier for a customer to store, manage and deploy images.
+            ecr as a managed service eliminates the need to operate your own contaner repositories or worry about scaling the 
+            underlying infrastructure.  <br>
+            Amazon ECR is integrated with ECS service to simplify workflow from dev stage to prod deployment.
+            <br><br>Benefits :<br>
+            1. Fully managed service
+            <br>2. A secured service to use
+            <br>3. Highly available service that operates on a hoghly scallable, redundant and durable infra on aws cloud.
+            <br>4. Provides a simple workflow that can be easily integrted with ecs or eks.
+
+                <p class="mini-headings">How ECR works ?</p>
+                <center>
+                    <img src="assets/Docker/25.png">
+                </center><br><br>
+            <p class="mini-headings">Demo On ECR</p>
+            Here , A docker image is created from the Dockerfile and pushed to ECR registry.
+            <br>
+            Follow the following steps :
+            <br><br><center>
+                <img src="assets/Docker/30.png">
+            </center>
+            <center>
+                <img src="assets/Docker/31.png" width=720px>
+            </center>
+            <center>
+                <img src="assets/Docker/32.png" width=720px>
+            </center>
+            <center>
+                <img src="assets/Docker/33.png" width=720px>
+            </center><br><br>
+            Now, Refresh The ECR page and Your image will be uploaded in the ECR registry.<br><br>
+            <p class="mini-headings">
+                What is ECS ?
+            </p>
+            </p> <hr>
+
+
+
+
+	    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
