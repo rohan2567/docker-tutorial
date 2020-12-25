@@ -429,7 +429,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
                 <li>Docker Volumes</li>
                 <li>Docker Compose</li>
                 <li>Docker Swarm</li>
-                <li>Docker and AWS ECS</li>
+                <li>Containerizing applications with Microsoft Azure</li>
             
 				
 
@@ -1075,57 +1075,80 @@ To Install docker-compose follow steps :<br>
 
         </p> <hr>
 
-
-
-<!-- 
-
-
             <p>
                 <center>
                     <h1 class="headings">
-                        Orchestration using Docker and AWS ECS
+                        Containerization of applications with Azure ACR
                     </h1>
                 </center> <br>
-            <p class="mini-headings">What is ECR?</p>  
-            It is a fully managed contaoner registry which makes it easier for a customer to store, manage and deploy images.
-            ecr as a managed service eliminates the need to operate your own contaner repositories or worry about scaling the 
-            underlying infrastructure.  <br>
-            Amazon ECR is integrated with ECS service to simplify workflow from dev stage to prod deployment.
-            <br><br>Benefits :<br>
-            1. Fully managed service
-            <br>2. A secured service to use
-            <br>3. Highly available service that operates on a hoghly scallable, redundant and durable infra on aws cloud.
-            <br>4. Provides a simple workflow that can be easily integrted with ecs or eks.
+                Azure Container Registry (ACR) is an Azure-based, private registry, for Docker container images.
+                Only you and your team and services have access to your registry, automating delivery to Azure services that use containers.
+                <br><br>
+                Microsoft currently offers three versions of ACR: Basic, Standard, and Premium, at three different price points.
+                Basic has the lowest capacity; Premium includes support for replication across regions and adds image signing support. You’re most likely to use Standard, which gives you 100GB of storage, 60MBps download bandwidth, and supports as many as 10 Web hooks. Pricing is per registry per day, with additional network costs and a separate charge for CPU usage when building new container images.
+                <br><br>
+                Creating a new container registry is relatively easy, using either the Azure CLI or Portal. ACR instances are tied to resource groups, so you can have a separate registry for each application you run on Azure. Once a registry has been created, you’re given the URL of a log-in server. This is the end point for integration with devops tools or your developers’ desktop Docker instances.
+                <br><br>
+                <h3 class="headings">
+                    Demo On Azure container registry.
+                </h3>
+                <h4>Task :</h4>
+                Dockerizing an angular application and pushing into Azure container registry
+                <ul>
+                    <li>Create an angular application</li>
+                    <li>Prepare Dockerfile for it.<br><br>
+                        <center>
+                            <img src="assets/Docker/acra.png">
+                        </center>
+                    </li><br>
+                    <li>
+                        Build docker image from this dockerfile using command : <div style="color: red;">docker build -t acrrepo/image1.0 .</div>
+                        <img src="assets/Docker/acr5.png" width="720px">
+                        
+                    </li><br>
+                    <li>
+                        Install azure Cli using following steps :<br>
+                        <center>
+                            <img src="assets/Docker/acraz.png" width="720px">
+                        </center>
+                    </li><br>
+                    <li>
+                        Create a resource group : <div style="color: red;">az group create --name acrdemo --location eastus2</div>
+                    </li><br>
+                    <li>
+                        Create an acr : <div style="color: red;">az acr create --resource-group acrdemo --name rohan2567acr --sku Basic --admin-enabled true</div>
+                    </li><br>
+                    <li>
+                        Now, Login to Azure Container Registry : <div style="color:red;">az acr login --name rohan2567acr</div> 
+                        <br><center>
+                            <img src="assets/Docker/acr2.png">
+                        </center>
+                    </li><br>
+                    <li>
+                        To be able to push Docker images to Azure Container Registry, they need to be tagged with the loginServer name of the Registry. These tags     are used for routing purposes when we push these Docker images to Azure.
+To figure out the loginServer name of the Azure Container Registry we just created you can use the following command:
+<div style="color: red;">az acr list --resource-group acrdemo --query "[].{acrLoginServer:loginServer}" --output table</div>
+<br>
+<center>
+    <img src="assets/Docker/acr3.png">
+</center>          
+</li><br>
+<li>
+   Now, tag the previous created image to makeit ready to push it in acr.
+   <div style="color:red">docker tag acrrepo/image1.0 rohan2567acr.azurecr.io/image1.0</div> 
+</li><br>
+<li>
+Now, push into acr. <div style="color: red;">docker push rohan2567acr.azurecr.io/image1.0</div>
+</li><br>
+<li>
+Verify : <div style="color: red;">az acr repository list -n rohan2567acr</div><br>
+<center>
+    <img src="assets/Docker/azr6.png">
+</center> 
+</li>
+                </ul>
 
-                <p class="mini-headings">How ECR works ?</p>
-                <center>
-                    <img src="assets/Docker/25.png">
-                </center><br><br>
-            <p class="mini-headings">Demo On ECR</p>
-            Here , A docker image is created from the Dockerfile and pushed to ECR registry.
-            <br>
-            Follow the following steps :
-            <br><br><center>
-                <img src="assets/Docker/30.png">
-            </center>
-            <center>
-                <img src="assets/Docker/31.png" width=720px>
-            </center>
-            <center>
-                <img src="assets/Docker/32.png" width=720px>
-            </center>
-            <center>
-                <img src="assets/Docker/33.png" width=720px>
-            </center><br><br>
-            Now, Refresh The ECR page and Your image will be uploaded in the ECR registry.<br><br>
-            <p class="mini-headings">
-                What is ECS ?
-            </p>
-            </p> <hr>
-
- -->
-
-
+            </p> <hr><br>
 	    </div>
 </div>
 <script type="text/javascript">
